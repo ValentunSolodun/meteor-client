@@ -5,7 +5,7 @@ import {compose} from "recompose";
 
 let withTracker = callback => WrappedComponent => {
   return (props) => {
-    let C = connect(state => state, null)(WrappedComponent);
+    let C = connect(state => state.test, null)(WrappedComponent);
     return <C {...callback(props)}/>
   }
 }
