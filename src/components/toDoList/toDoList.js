@@ -1,7 +1,7 @@
 import React from 'react';
 import {ToDoItem} from "../toDoItem/toDoItem.js";
-import withTracker from '../withTracker';
-import {Session, addTask} from "../Session";
+import withTracker from '../../withTracker';
+import {Session, addTask} from "../../Session";
 // import {getList, addTask, removeTask, changeChecked} from '../../../api/links';
 // import {getList, addTask, removeTask, changeChecked} from "../../store";
 
@@ -12,7 +12,7 @@ class ToDoList extends React.Component {
   }
 
   render() {
-    // console.log(this.props);
+    console.log(this.props);
     let {list, addTask} = this.props;
     return (
       <React.Fragment>
@@ -35,7 +35,7 @@ ToDoList = withTracker((props) => {
     {id: 3, title: "Task 3", checked: false}
   ]);
   // setTimeout(() => {
-  //   Session.set('name', 'test name 2');
+  //   Session.set('name', 'main name 2');
   // }, 2000);
   return {
     // state1: Session.get('name'),

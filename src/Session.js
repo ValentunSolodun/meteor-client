@@ -1,8 +1,8 @@
-import {store} from "../store";
+import {store} from "./store";
 
 export const Session = {
   get(name) {
-    return store.getState().test[name];
+    return store.getState().main[name];
   },
   set(name, obj) {
     store.dispatch({type: 'UPDATE', payload: {name, obj}})

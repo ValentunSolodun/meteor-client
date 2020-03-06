@@ -1,6 +1,6 @@
 const INITIAL_STATE = {};
 
-const test = (state = INITIAL_STATE, action) => {
+const main = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case "UPDATE":
       let newState = {...state};
@@ -13,4 +13,4 @@ const test = (state = INITIAL_STATE, action) => {
   }
 }
 
-export default test;
+export default main;

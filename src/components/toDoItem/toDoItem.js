@@ -1,6 +1,6 @@
 import React from 'react';
-import withTracker from '../withTracker';
-import {getList, removeTask, changeChecked} from "../Session";
+import withTracker from '../../withTracker';
+import {getList, removeTask, changeChecked} from "../../Session";
 
 let ToDoItem = (props) => {
   let {item, removeTask, changeChecked} = props;

@@ -1,10 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {connect} from 'react-redux';
 
 
 let withTracker = callback => WrappedComponent => {
   return (props) => {
-    let C = connect(state => state.test, null)(WrappedComponent);
+    let C = connect(state => state.main, null)(WrappedComponent);
     return <C {...callback(props)}/>
   }
 }
